@@ -7,25 +7,25 @@ A simple library was written by C# ASP.Net Core web API application supported co
 Use `Package Manager` to install it.
 
 ```bash
-Install-Package QuickBookSoap2Rest -Version 2.0.0
+Install-Package RXN.AspNetCore.QuickBookSoap2Rest -Version 2.0.0
 ```
 
 Or `.NET cli`
 
 ```bash
-dotnet add package QuickBookSoap2Rest --version 2.0.0
+dotnet add package RXN.AspNetCore.QuickBookSoap2Rest --version 2.0.0
 ```
 
 Or `PackageReference `
 
 ```bash
-<PackageReference Include="QuickBookSoap2Rest" Version="2.0.0" />
+<PackageReference Include="RXN.AspNetCore.QuickBookSoap2Rest" Version="2.0.0" />
 ```
 
 Or `Paket CLI`
 
 ```bash
-paket add QuickBookSoap2Rest --version 2.0.0
+paket add RXN.AspNetCore.QuickBookSoap2Rest --version 2.0.0
 ```
 
 ## Usage
