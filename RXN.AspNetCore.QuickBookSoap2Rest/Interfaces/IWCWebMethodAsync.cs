@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace QuickBookSoap2Rest.Interfaces
+namespace RXN.AspNetCore.QuickBookSoap2Rest.Interfaces
 {
     public interface IWCWebMethodAsync
     {

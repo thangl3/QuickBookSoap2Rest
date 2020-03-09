@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
-using QuickBookSoap2Rest.Utils;
+using RXN.AspNetCore.QuickBookSoap2Rest.Utils;
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using System.Xml;
 
-namespace QuickBookSoap2Rest.Helpers
+namespace RXN.AspNetCore.QuickBookSoap2Rest.Helpers
 {
     public class WCRequestBridge
     {
@@ -64,7 +66,7 @@ namespace QuickBookSoap2Rest.Helpers
 
                 if (soapBodyContent.HasChildNodes)
                 {
-                    foreach(XmlNode node in soapBodyContent.ChildNodes)
+                    foreach (XmlNode node in soapBodyContent.ChildNodes)
                     {
                         _requestParams.Add(node.Name.Trim(), node.InnerText.Trim());
                     }

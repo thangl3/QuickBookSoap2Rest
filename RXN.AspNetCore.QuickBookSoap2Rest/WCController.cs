@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
-using QuickBookSoap2Rest.Helpers;
-using QuickBookSoap2Rest.Interfaces;
-using QuickBookSoap2Rest.Utils;
+using RXN.AspNetCore.QuickBookSoap2Rest.Helpers;
+using RXN.AspNetCore.QuickBookSoap2Rest.Interfaces;
+using RXN.AspNetCore.QuickBookSoap2Rest.Utils;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace QuickBookSoap2Rest
+namespace RXN.AspNetCore.QuickBookSoap2Rest
 {
     public class WCController
     {

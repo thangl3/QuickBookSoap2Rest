@@ -1,12 +1,10 @@
-﻿using QuickBookSoap2Rest.Utils;
+﻿using RXN.AspNetCore.QuickBookSoap2Rest.Utils;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 using System.Xml.Linq;
-using System.Xml.Serialization;
 
-namespace QuickBookSoap2Rest.Helpers
+namespace RXN.AspNetCore.QuickBookSoap2Rest.Helpers
 {
     public class WCResponseBridge
     {

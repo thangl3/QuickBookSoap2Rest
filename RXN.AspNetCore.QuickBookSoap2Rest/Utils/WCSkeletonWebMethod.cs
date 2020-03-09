@@ -1,6 +1,8 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace QuickBookSoap2Rest.Utils
+namespace RXN.AspNetCore.QuickBookSoap2Rest.Utils
 {
     public enum WCSkeletonWebMethod
     {
