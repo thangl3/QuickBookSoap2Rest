@@ -7,25 +7,25 @@ A simple library was written by C# ASP.Net Core web API application supported co
 Use `Package Manager` to install it.
 
 ```bash
-Install-Package QuickBookSoap2Rest -Version 1.1.0
+Install-Package QuickBookSoap2Rest -Version 2.0.0
 ```
 
 Or `.NET cli`
 
 ```bash
-dotnet add package QuickBookSoap2Rest --version 1.1.0
+dotnet add package QuickBookSoap2Rest --version 2.0.0
 ```
 
 Or `PackageReference `
 
 ```bash
-<PackageReference Include="QuickBookSoap2Rest" Version="1.1.0" />
+<PackageReference Include="QuickBookSoap2Rest" Version="2.0.0" />
 ```
 
 Or `Paket CLI`
 
 ```bash
-paket add QuickBookSoap2Rest --version 1.1.0
+paket add QuickBookSoap2Rest --version 2.0.0
 ```
 
 ## Usage
@@ -42,10 +42,11 @@ Example
 - Implement `IWCWebMethod`
 
 ```csharp
-using QuickBookSoap2Rest.Interfaces;
+using RXN.AspNetCore.QuickBookSoap2Rest.Interfaces;
 
 // ...
 
+// The handle class take care all business when QBWC requested to server
 public class WCRequestHandler : IWCWebMethod
 {
     // must implement all methods supporting WC Connector
@@ -69,10 +70,11 @@ public class WCRequestHandler : IWCWebMethod
 - Implement `IWCWebMethodAsync`
 
 ```csharp
-using QuickBookSoap2Rest.Interfaces;
+using RXN.AspNetCore.QuickBookSoap2Rest.Interfaces;
 
 // ...
 
+// The handle class take care all business when QBWC requested to server
 public class WCRequestHandlerAsync : IWCWebMethodAsync
 {
     // must implement all methods supporting WC Connector
@@ -103,8 +105,8 @@ Example:
 ```csharp
 
 using Microsoft.AspNetCore.Mvc;
-using QuickBookSoap2Rest;
-using QuickBookSoap2Rest.Interfaces;
+using RXN.AspNetCore.QuickBookSoap2Rest;
+using RXN.AspNetCore.QuickBookSoap2Rest.Interfaces;
 
 [Route("api")]
 [ApiController]
@@ -118,6 +120,7 @@ public class SyncController : ControllerBase
 
         // Request from AspNetCore <Microsoft.AspNetCore.Http.HttpRequest> Request
         // a property of Controller Base
+        // Now all QBWC request will be handle and return at here
         return wcController.HandleAsync(Request);
     }
 }
