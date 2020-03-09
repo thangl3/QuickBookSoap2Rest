@@ -1,6 +1,6 @@
 # QuickBookSoap2Rest
 
-A simple library written by C# ASP .NetCore web API application that communicates with QuickBooks via QBWebConnector
+A simple library was written by C# ASP.Net Core web API application supported communicates with QBWebConnector (of QuickBooks)
 
 ## Installation
 
